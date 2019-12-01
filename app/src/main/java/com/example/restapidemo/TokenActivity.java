@@ -74,7 +74,7 @@ public class TokenActivity extends AppCompatActivity {
 
              uname = et_uname.getText().toString().trim();
              upass = et_pass.getText().toString().trim();
-             Login login = new Login("","");
+             Login login = new Login(uname,upass);
              Call<User> call = jsonPlaceHolderApi.login(login);
 
              call.enqueue(new Callback<User>() {
