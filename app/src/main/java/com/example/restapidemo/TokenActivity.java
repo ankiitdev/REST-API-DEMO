@@ -120,7 +120,7 @@ public class TokenActivity extends AppCompatActivity {
 
                  @Override
                  public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                         Toast.makeText(TokenActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
                  }
              });
          }
